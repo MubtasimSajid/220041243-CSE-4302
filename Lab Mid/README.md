@@ -1,1 +1,1 @@
-Mid-term lab evaluation was held on 18th of October, 2024 (Friday) It consisted of a written quiz, followed up by a 40-minute coding session & ended with a viva. Only coding part's solution will be uploaded here.
+Mid-term lab evaluation was held on 18th of October, 2024 (Friday) It consisted of a written quiz, followed up by a 40-minute programming session & ended with a viva. Only the coding part's solution will be uploaded here.
