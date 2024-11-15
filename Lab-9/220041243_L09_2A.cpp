@@ -129,9 +129,12 @@ class HybridThermostat : public ThermostatDevice, public SecurityCameraDevice {
         ~HybridThermostat() {}
 };
 
-void sortDevicesByPower(SmartDevice **devices, int n) {
-    sort(devices, devices + n, [](SmartDevice *a, SmartDevice *b)
-         { return a->getPowerRating() > b->getPowerRating(); });
+bool comparator(SmartDevice *a, SmartDevice *b) {
+    return a->getPowerRating() > b->getPowerRating();
+}
+
+void sortDevicesByPower(SmartDevice **smartDevices, int noOfDevices) {
+    sort(smartDevices, smartDevices + noOfDevices, comparator);
 }
 
 int main() {
