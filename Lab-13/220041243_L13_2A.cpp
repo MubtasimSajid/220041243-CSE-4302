@@ -127,8 +127,8 @@ void sendToRecovery(const int &id) {
 }
 
 void saveData() {
-    ofstream activeFile("Lab-13/active_creatures.txt");
-    ofstream recoveryFile("Lab-13/recovery_creatures.txt");
+    ofstream activeFile("active_creatures.txt");
+    ofstream recoveryFile("recovery_creatures.txt");
 
     for (const auto &pair : activeCreatureMap) {
         ActiveCreature* creature = pair.second;
@@ -153,8 +153,8 @@ void saveData() {
 }
 
 void loadData() {
-    ifstream activeFile("Lab-13/active_creatures.txt");
-    ifstream recoveryFile("Lab-13/recovery_creatures.txt");
+    ifstream activeFile("active_creatures.txt");
+    ifstream recoveryFile("recovery_creatures.txt");
 
     if (!activeFile || !recoveryFile) {
         cerr << "Error opening file for reading." << endl;
